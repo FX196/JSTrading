@@ -16,7 +16,7 @@ def main(strategies, exchange):
     :return:
     """
     exchange_connection = ExchangeConnection(exchange)  # flag for testing
-    print("Successfully Connected")
+    print("Successfully Connected to %s" % exchange)
     bot = Bot(exchange_connection, strategies)
     print("Bot Initialized")
     bot.run()
